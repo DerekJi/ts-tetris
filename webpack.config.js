@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const ROOT = path.resolve( __dirname, 'src' );
 const DESTINATION = path.resolve( __dirname, 'dist' );
@@ -10,6 +11,13 @@ module.exports = {
     entry: {
         'main': './main.ts'
     },
+
+    plugins: [
+        new CopyPlugin([
+            { from: __dirname + '/src/assets', to: 'assets' },
+            { from: __dirname + '/src/index.html', to: 'index.html' },
+        ]),
+    ],
     
     output: {
         filename: '[name].bundle.js',

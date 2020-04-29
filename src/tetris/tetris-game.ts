@@ -79,6 +79,8 @@ export class TetrisGame implements ITetrisGame {
 
     tetris.status = ETetrisGameStatus.running;
 
+    $('select').prop('disabled', true);
+
     tetris.intervalId = window.setInterval(() => this.moveDown(tetris), this.configs.speedIntervals);
   }
 
@@ -89,6 +91,7 @@ export class TetrisGame implements ITetrisGame {
     const tetris = this;
     tetris.status = ETetrisGameStatus.notStarted;
     clearInterval(tetris.intervalId);
+    $('select').prop('disabled', false);
     tetris.matrix = initialMatrix();
   }
 

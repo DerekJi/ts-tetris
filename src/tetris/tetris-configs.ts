@@ -34,6 +34,7 @@ export class TetrisConfigs implements ITetrisConfigs {
 
   initIconDDL() {
     const ddl = $(this.dropdownlists.icon);
+    ddl.empty();
     for (let i = 0; i < $constants.blockIcons.length; i++) {
       ddl.append(new Option($constants.blockIcons[i], i.toString()));
     }
@@ -43,6 +44,7 @@ export class TetrisConfigs implements ITetrisConfigs {
 
   initSpeedDDL() {
     const ddl = $(this.dropdownlists.speed);
+    ddl.empty();
     for (let i = 0; i < $constants.speedLevels.length; i++ ) {
       ddl.append(new Option((i + 1).toString(), i.toString()));
     }
@@ -53,6 +55,7 @@ export class TetrisConfigs implements ITetrisConfigs {
 
   initBackgroundDDL() {
     const ddl = $(this.dropdownlists.background);
+    ddl.empty();
     for (let i = 0; i < $constants.bgImages.length; i++ ) {
       ddl.append(new Option('Beauty ' + (i + 1), $constants.bgImages[i]));
     }

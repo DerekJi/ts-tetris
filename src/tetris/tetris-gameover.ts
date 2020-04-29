@@ -47,7 +47,9 @@ export class TetrisGameover implements ITetrisGameover {
   }
 
   onGameover(tetris: ITetrisGame) {
-    tetris.stop();
-    setTimeout(() => tetris.gameover.show(), 500);
+    setTimeout(() => {
+      tetris.gameover.show();
+      tetris.stop();
+    }, 500);
   }
 }

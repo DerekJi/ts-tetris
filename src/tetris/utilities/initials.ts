@@ -13,7 +13,11 @@ export const initialTileOptions = (): ITileOptions => {
   };
 };
 
-
+/**
+ * Get an initialized object which implements IShapeOptions
+ *
+ * @returns IShapeOptions
+ */
 export const initialShapeOptions = (): IShapeOptions => {
   return {
     colorId: 0,

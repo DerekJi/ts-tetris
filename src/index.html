@@ -7,7 +7,13 @@
     <meta name="description" content="Play Free Online Games. Puzzles, Tetris. All games for free. No Download. Just play now.">
     <meta name="keywords" content="Free Online Games, Free Games Online, Free Games to Play, Play Games, Free Games, Puzzles, Tetris, Play Games for Free">
     <meta name="robots" content="noindex,nofollow">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link type="text/css" rel="stylesheet" href="assets/css/tetris-css2.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/tetris-debug.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,6 +40,28 @@
           </p>
           <!-- 3rd element: Button to control start/pause/end -->
           <button id="startBtn" class="frmButton">Start</button>
+
+          <!-- Control Buttons -->
+          <div class="control-panel not-visible">
+            <div class="d-flex justify-content-center">
+              <a class="arrow-button" href="javascript:void(0);" id="btn-transform">
+                <i class="fa fa-reply-all"></i>
+              </a>
+            </div>
+            <div class="d-flex justify-content-around">
+              <a class="arrow-button" href="javascript:void(0);" id="btn-move-left">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="arrow-button" href="javascript:void(0);" id="btn-move-right">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a class="arrow-button" href="javascript:void(0);" id="btn-mvoe-down">
+                <i class="fa fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
 
           <!-- 4th element: tabFrame to control parameters/details -->
           <div class='tab-box'>

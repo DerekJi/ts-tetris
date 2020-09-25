@@ -22,6 +22,12 @@ export const domSelectors = {
   startButton: '#startBtn',
   tabMenuSetup: '#tm1',
   tabMenuAbout: '#tm2',
+
+  controlPanel: '.control-panel',
+  transformButton: '#btn-transform',
+  moveLeftButton: '#btn-move-left',
+  moveRightButton: '#btn-move-right',
+  moveDownButton: '#btn-move-down',
 };
 
 export const templates = {

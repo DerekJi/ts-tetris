@@ -81,6 +81,8 @@ export class TetrisGame implements ITetrisGame {
 
     $('select').prop('disabled', true);
 
+    $($constants.domSelectors.controlPanel).removeClass('not-visible');
+
     tetris.intervalId = window.setInterval(() => this.moveDown(tetris), this.configs.speedIntervals);
   }
 
@@ -92,6 +94,7 @@ export class TetrisGame implements ITetrisGame {
     tetris.status = ETetrisGameStatus.notStarted;
     clearInterval(tetris.intervalId);
     $('select').prop('disabled', false);
+    $($constants.domSelectors.controlPanel).addClass('not-visible');
     tetris.matrix = initialMatrix();
   }
 
@@ -274,6 +277,7 @@ export class TetrisGame implements ITetrisGame {
    */
   pause(tetris: ITetrisGame) {
     clearInterval(tetris.intervalId);
+    $($constants.domSelectors.controlPanel).addClass('not-visible');
     tetris.status = ETetrisGameStatus.paused;
   }
 
@@ -283,6 +287,7 @@ export class TetrisGame implements ITetrisGame {
    */
   resume(tetris: ITetrisGame) {
     tetris.status = ETetrisGameStatus.running;
+    $($constants.domSelectors.controlPanel).removeClass('not-visible');
     tetris.intervalId = window.setInterval(() => this.moveDown(tetris), this.configs.speedIntervals);
   }
 

@@ -14,6 +14,11 @@ export class TetrisEvents {
 
     $($constants.domSelectors.tabMenuSetup).on('click', () => tabsComponent.switchTo(tabsComponent, 1));
     $($constants.domSelectors.tabMenuAbout).on('click', () => tabsComponent.switchTo(tabsComponent, 2));
+
+    $($constants.domSelectors.transformButton).on('click', () => tetris.rotate(tetris));
+    $($constants.domSelectors.moveLeftButton).on('click', () => tetris.moveLeft(tetris));
+    $($constants.domSelectors.moveRightButton).on('click', () => tetris.moveRight(tetris));
+    $($constants.domSelectors.moveDownButton).on('click', () => tetris.moveDown(tetris));
   }
 
   onKeydown(event: JQuery.KeyDownEvent, tetris: ITetrisGame) {

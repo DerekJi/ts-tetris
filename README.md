@@ -1,5 +1,7 @@
 # TypeScript Tetris
 
+[![DevOps](https://github.com/DerekJi/ts-tetris/actions/workflows/v1.yml/badge.svg)](https://github.com/DerekJi/ts-tetris/actions/workflows/v1.yml)
+
 _The new typescript version of [JsGames](https://github.com/DerekToop/jsgames)_
 
 ![CI](https://github.com/DerekToop/tsgames/workflows/CI/badge.svg) | 

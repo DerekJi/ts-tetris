@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <link type="text/css" rel="stylesheet" href="assets/css/tetris-css2.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/digital-7-font-face.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/tetris-debug.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="main.bundle.js"></script>
@@ -35,14 +36,18 @@
           <div id="nextBlock">	</div>
           <!-- 2nd element: Show the current parameters -->
           <p class="plaintxt">
-            Level:  <span id="speed" class="label">1</span>&nbsp;&nbsp;&nbsp;
-            Score: <span id="score" class="label">0</span>
+            <span>Level:</span>
+            <span id="speed" class="label">1</span>&nbsp;&nbsp;&nbsp;
+          </p>
+          <p class="plaintxt">
+            <span>Score:</span>
+            <span id="score" class="label">0</span>
           </p>
           <!-- 3rd element: Button to control start/pause/end -->
           <button id="startBtn" class="frmButton">Start</button>
 
           <!-- Control Buttons -->
-          <div class="control-panel not-visible">
+          <!-- <div class="control-panel not-visible">
             <div class="d-flex justify-content-center">
               <a class="arrow-button" href="javascript:void(0);" id="btn-transform">
                 <i class="fa fa-reply-all"></i>
@@ -61,7 +66,7 @@
                 <i class="fa fa-arrow-down"></i>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- 4th element: tabFrame to control parameters/details -->
           <div class='tab-box'>

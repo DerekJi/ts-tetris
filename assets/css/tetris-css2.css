@@ -50,20 +50,30 @@ a {
 	background-color:#a0d0ff;
 	border:0px;
 	text-align:left;
-	font-family:Verdana;
+	font-family: 'digital-7';
 	font-size:12px;
-	color:#ffffff;
 	margin-top: 20px;
+	color: gray;
+}
+
+.plaintxt span {
+	width: 60px;
+	display: inline-block;
+}
+
+p.plaintxt, span.label {
+	font-size: 24px;	
 }
 
 .label {
 	background-color:#a0d0ff;
 	border:0px;
 	width:2em;
-	font-family:Verdana;
+	font-family: 'digital-7';
 	font-size:16px;
-	color:#a000ff;
+	color:black;
 }
+
 
 .frmButton {
 	border:none;
@@ -103,7 +113,7 @@ a {
 	font-size:12px;
 }
 
-.tab-box { margin-top:20px; font-size:12px; font-family:Verdana;	}
+.tab-box { margin-top:60px; font-size:12px; font-family:Verdana;	}
 
 .tab-menu { margin:10px; padding:5px; border-radius:8px 8px 0 0;  }
 
